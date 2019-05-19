@@ -1,11 +1,33 @@
-h1  {
+h1,h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 50pt;
-
+    text-align: center;
+    color: white;
+    -webkit-text-stroke-width: .8px;
+   -webkit-text-stroke-color: black;
+   font-weight: 500;
 }
 
 h2  {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 30pt;
 
+}
+
+.jumbotron {
+    background-image: url(/assets/images/crytsalwallpaper.jpeg);
+    -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+   position: relative;
+   text-align: center;
+   
+}    
+
+
+.lead {
+    font-size: 30pt;
+    padding-bottom: 90px;
+}
+
+.bg {
+    background-image: url(/assets/images/mineWallpaper.jpg);
 }

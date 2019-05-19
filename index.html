@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector</title>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
     <!-- reset CSS first -->
     <link rel="stylesheet" href="assets/css/reset.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -21,54 +21,88 @@
 </head>
 
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <h1 id="user-total-text">?</h1>
-            <button id="Button1" type="button" class="btn btn-primary" value="6">First</button>
-            <button id="Button2" type="button" class="btn btn-secondary" value="6">Second</button>
-            <button id="Button3" type="button" class="btn btn-success" value="10">Third</button>
+    <div class="bg">
+        <div class="container">
+            <div class="row">
+                <html lang="en" class="full-height">
 
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="jumbotron jumbotron-fluid">
+
+                                <div class="container textBox">
+                                    <h1 class="display-4">Crystal Collector</h1>
+
+                                    <p class="lead">Collect the crystals to reach the total</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 id="user-total-text">?</h1>
+                            <div class="row">
+                                <div class="col-md-3">
+                                </div>
+                                <div class="col-md-5">
+                                    <button id="Button1" type="button" class="btn btn-primary" value="6">First</button>
+                                    <button id="Button2" type="button" class="btn btn-secondary"
+                                        value="6">Second</button>
+                                    <button id="Button3" type="button" class="btn btn-success" value="10">Third</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 id="computerchoice-text">?</h1>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p>
+                                <h2 id="wins-text">Wins: 0</h2>
+                            </p>
+
+
+                        </div>
+                        <div class="col-md-3">
+                            <p>
+                                <h2 id="losses-text">Losses : 0</h2>
+                            </p>
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <script type="text/javascript" src="assets/javascript/game.js"></script>
+            </div>
         </div>
-        <div class="col-md-6">
-        <h1 id="computerchoice-text">?</h1>
-            
-        </div>
-
-    </div>
-    <div class="row">
-        <h2 id="wins-text"></h2>
-        <h2 id="losses-text"></h2>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-<script type="text/javascript" src="assets/javascript/game.js"></script>
-
-
 </body>
 
 </html>
