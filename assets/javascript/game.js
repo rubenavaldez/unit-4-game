@@ -46,13 +46,13 @@ function checkTotal(){
     } else if (userTotal == computerChoice) {
         wins++;
         console.log("you win")
-        
+        userTotalText.textContent = 0;
         winsText.textContent = "Wins: " + wins;
         reset();
     } else {
         losses++;
         console.log("you lose")
-        
+        userTotalText.textContent = 0;
         lossesText.textContent ="Losses: " + losses;
         reset()
     }
