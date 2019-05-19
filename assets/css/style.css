@@ -1,15 +1,19 @@
-h1,h2 {
+ h1, h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 50pt;
     text-align: center;
-    color: white;
-    -webkit-text-stroke-width: .8px;
+    color: aqua;
+    -webkit-text-stroke-width: 3px;
    -webkit-text-stroke-color: black;
-   font-weight: 500;
-}
+   font-weight: bold;
+   padding: 20px;
+} 
+
 
 h2  {
-    font-size: 30pt;
+    font-size: 25pt;
+    -webkit-text-stroke-width: 1px;
+    
 
 }
 
@@ -22,12 +26,23 @@ h2  {
    
 }    
 
+.display-4 {
+    padding-top: 90px;
+    font-size: 70pt;
+    padding-bottom: 30px;
+}
 
 .lead {
     font-size: 30pt;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
 }
 
 .bg {
     background-image: url(/assets/images/mineWallpaper.jpg);
+    height: 1200px;
+}
+
+#Button1{
+    margin-left: 12px;
+    
 }
