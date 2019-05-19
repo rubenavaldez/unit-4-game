@@ -27,7 +27,7 @@ h2  {
 }    
 
 .display-4 {
-    padding-top: 90px;
+    padding-top: 0px;
     font-size: 70pt;
     padding-bottom: 30px;
 }
@@ -43,9 +43,18 @@ h2  {
 }
 
 #Button1{
-    margin-left: 12px;
+    margin-left: 38px;
       
 }
 
+.button {
+    background-color: rgba(0,0,0,0);
+    border: 0px; 
+    
+   
+}
 
+button:focus {
+    outline:0;
+}
 

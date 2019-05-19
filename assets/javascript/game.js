@@ -6,7 +6,11 @@ var losses = 0;
 var Button1 = "";
 var Button2 = "";
 var Button3 = "";
+var Button4 = "";
 
+// set sound effect
+var audioElement = document.createElement("audio");
+        audioElement.setAttribute("src", "assets/sounds/jewel-sound.mp3");
 
 // reset variables to zero
 function reset() {
@@ -27,14 +31,17 @@ function reset() {
     // buttons can't be zerp
     userTotal = parseInt(userTotal);
 
-    Button1 = [(Math.floor(Math.random() * 15) + 1) ];
+    Button1 = [(Math.floor(Math.random() * 15) + 2) ];
     Button1 = parseInt(Button1);
 
-    Button2 = [(Math.floor(Math.random() * 10) + 1)];
+    Button2 = [(Math.floor(Math.random() * 10) + 2)];
     Button2 = parseInt(Button2);
 
-    Button3 = [(Math.floor(Math.random() * 7) + 1 )];
+    Button3 = [(Math.floor(Math.random() * 7) + 2 )];
     Button3 = parseInt(Button3);
+
+    Button4 = [(Math.floor(Math.random() * 12) + 1 )];
+    Button4 = parseInt(Button4);
 }
 
 
@@ -78,14 +85,19 @@ $(document).ready(function () {
     // assign random values to buttons and convert them numbers not string
     userTotal = parseInt(userTotal);
 
-    Button1 = [Math.floor(Math.random() * 15)];
+    Button1 = [(Math.floor(Math.random() * 15) + 2) ];
     Button1 = parseInt(Button1);
 
-    Button2 = [Math.floor(Math.random() * 10)];
+    Button2 = [(Math.floor(Math.random() * 10) + 2)];
     Button2 = parseInt(Button2);
 
-    Button3 = [Math.floor(Math.random() * 7)];
+    Button3 = [(Math.floor(Math.random() * 7) + 2 )];
     Button3 = parseInt(Button3);
+
+    Button4 = [(Math.floor(Math.random() * 12) + 1 )];
+    Button4 = parseInt(Button4);
+
+    
 
     // move to reset function?
     wins = parseInt(wins);
@@ -95,25 +107,36 @@ $(document).ready(function () {
 
    
         
-
+    
 
 
             // buttons work and change user total
             $("#Button1").on("click", function () {
+                audioElement.play();
                 userTotal = userTotal + Button1;
                 console.log(userTotal);
                 userTotalText.textContent = userTotal;
                 checkTotal();
+                
             });
 
             $("#Button2").on("click", function () {
+                audioElement.play();
                 userTotal = userTotal + Button2;
                 console.log(userTotal);
                 userTotalText.textContent = userTotal;
                 checkTotal();
             });
             $("#Button3").on("click", function () {
+                audioElement.play();
                 userTotal = userTotal + Button3;
+                console.log(userTotal);
+                userTotalText.textContent = userTotal;
+                checkTotal();
+            });
+            $("#Button4").on("click", function () {
+                audioElement.play();
+                userTotal = userTotal + Button4;
                 console.log(userTotal);
                 userTotalText.textContent = userTotal;
                 checkTotal();
