@@ -18,7 +18,7 @@ h2  {
 }
 
 .jumbotron {
-    background-image: url(/assets/images/crytsalwallpaper.jpeg);
+    background-image: url(assets/images/crytsalwallpaper.jpeg);
     -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: white;
    position: relative;
@@ -38,7 +38,7 @@ h2  {
 }
 
 .bg {
-    background-image: url(/assets/images/mineWallpaper.jpg);
+    background-image: url(assets/images/mineWallpaper.jpg);
     height: 1200px;
 }
 
