@@ -112,6 +112,7 @@ $(document).ready(function () {
 
             // buttons work and change user total
             $("#Button1").on("click", function () {
+                
                 audioElement.play();
                 userTotal = userTotal + Button1;
                 console.log(userTotal);
