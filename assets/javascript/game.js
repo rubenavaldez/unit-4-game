@@ -76,39 +76,40 @@ $(document).ready(function () {
     // variables are now zero
 
     // computer choice is random, must be over 30
-    computerChoice = [(Math.floor(Math.random() * 70) + 30)];
+    // computerChoice = [(Math.floor(Math.random() * 70) + 30)];
 
-    // write the computer choice and user total to the DOM
-    computerChoiceText.textContent = computerChoice;
+    // // write the computer choice and user total to the DOM
+    // computerChoiceText.textContent = computerChoice;
 
 
-    // assign random values to buttons and convert them numbers not string
-    userTotal = parseInt(userTotal);
+    // // assign random values to buttons and convert them numbers not string
+    // userTotal = parseInt(userTotal);
 
-    Button1 = [(Math.floor(Math.random() * 15) + 2) ];
-    Button1 = parseInt(Button1);
-
-    Button2 = [(Math.floor(Math.random() * 10) + 2)];
-    Button2 = parseInt(Button2);
-
-    Button3 = [(Math.floor(Math.random() * 7) + 2 )];
-    Button3 = parseInt(Button3);
-
-    Button4 = [(Math.floor(Math.random() * 12) + 1 )];
-    Button4 = parseInt(Button4);
+    // Button1 = [(Math.floor(Math.random() * 15) + 2) ];
+    // Button1 = parseInt(Button1);
 
     
+    // Button2 = [(Math.floor(Math.random() * 10) + 2)];
+    // Button2 = parseInt(Button2);
+
+    // Button3 = [(Math.floor(Math.random() * 7) + 2 )];
+    // Button3 = parseInt(Button3);
+
+    // Button4 = [(Math.floor(Math.random() * 12) + 1 )];
+    // Button4 = parseInt(Button4);
+
+    // the reset() function now peforms these values     
 
     // move to reset function?
-    wins = parseInt(wins);
-    utton3 = parseInt(losses);
+    // wins = parseInt(wins);
+    // losses = parseInt(losses);
     
     console.log(userTotal);
 
-   
+
         
     
-
+    
 
             // buttons work and change user total
             $("#Button1").on("click", function () {
@@ -119,7 +120,7 @@ $(document).ready(function () {
                 userTotalText.textContent = userTotal;
                 checkTotal();
                 
-            });
+            },);
 
             $("#Button2").on("click", function () {
                 audioElement.play();
